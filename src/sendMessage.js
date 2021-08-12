@@ -42,7 +42,7 @@ const SendMessage = () => {
         </form>
         {chat.map((message) => {
           return (
-            <div className="message">
+            <div className="message" key={message}>
               <h4>David: {message}</h4>
               <button className="btn" onClick={removeMessage}>
                 Delete
