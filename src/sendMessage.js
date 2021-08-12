@@ -6,17 +6,15 @@ const SendMessage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newMessage = message;
-    chat.push(newMessage)
+    chat.push(message);
     setChat([...chat]);
     setMessage("");
     console.log(chat);
   };
 
   const removeMessage = (t) => {
-    let newChat = chat;
     const position = chat.indexOf(t);
-    setChat(newChat.splice(position, 1));
+    setChat(chat.splice(position, 1));
   };
 
   return (
