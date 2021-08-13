@@ -12,8 +12,8 @@ const SendMessage = () => {
     console.log(chat);
   };
 
-  const removeMessage = (t) => {
-    const position = chat.indexOf(t);
+  const removeMessage = (item) => {
+    const position = chat.indexOf(item);
     setChat(chat.splice(position, 1));
   };
 
