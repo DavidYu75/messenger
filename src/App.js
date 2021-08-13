@@ -1,13 +1,12 @@
 import React from 'react';
-import Message from './sendMessage'
+import Message from './message';
 
 function App() {
-  return (
-    <div className="container">
-      <h1>Messenger</h1>
-      <Message/>
-    </div>
-  );
+    return (
+        <div className="container">
+            <Message />
+        </div>
+    );
 }
 
 export default App;
