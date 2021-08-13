@@ -4,8 +4,8 @@ const SendMessage = () => {
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState([]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     chat.push(message);
     setChat([...chat]);
     setMessage("");
